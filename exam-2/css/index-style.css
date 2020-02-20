@@ -1,0 +1,591 @@
+.navbar
+{
+    position: absolute;
+    z-index:999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.collapse .nav-link:hover
+{
+    color: #f25454;
+}
+.nav-item
+{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+.colored
+{
+    color: #f25454;
+}
+
+.carousel
+{
+    position: relative;
+}
+.bg-1
+{
+    height: 700px;
+    background-image: url(../images/slideshow-1.jpg);
+    background-size: cover;
+}
+.bg-2
+{
+    height: 700px;
+    background-image: url(../images/slideshow-2.jpg);
+    background-size: cover;
+}
+.bg-3
+{
+    height: 700px;
+    background-image: url(../images/slideshow-3.jpg);
+    background-size: cover;
+}
+.title1
+{
+    height: 700px;
+}
+.title h1
+{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
+    word-wrap: break-word;
+}
+.carousel-control-prev  i
+{
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    font-size: 30px;
+    padding: 10px;
+}
+.carousel-control-next  i
+{
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    font-size: 30px;
+    padding: 10px;
+}
+.about .title
+{
+    position: relative;
+}
+.about .title h2
+{
+    font-weight: 700;
+    font-size: 5rem;
+    color: #f1f1f1;
+}
+.about .title h3
+{
+    font-weight: 700;
+    font-size: 2.8rem;
+    position: absolute;
+}
+.about .line
+{
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 10px;
+}
+.about .title:hover .line
+{
+    width : 60px;
+}
+
+.about .para
+{
+    font-size : 18px;
+    color: #999;
+}
+.progress
+{
+    height: 4px;
+}
+.progress-bar
+{
+    background-color:#f25454; 
+}
+.about .parag
+{
+    font-size: 16px;
+    line-height: 1.75em;
+    color: #666;
+}
+.mission
+{
+    background-image: url(../images/mission.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.mission .icon i
+{
+    font-size: 52px;
+}
+.mission .icon:hover
+{
+    color: #f25454;
+}
+.mission .icon h3
+{
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.mission ul
+{
+    list-style-type: none;
+}
+.team .title
+{
+    position: relative;
+}
+.team .title h2
+{
+    font-weight: 700;
+    font-size: 5rem;
+    color: #f1f1f1;
+}
+.team .title h3
+{
+    font-weight: 700;
+    font-size: 2.8rem;
+    position: absolute;
+}
+.team .line
+{
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 10px;
+}
+.team .title:hover .line
+{
+    width : 60px;
+}
+.team .member .memberimg
+{
+    position: relative;
+    overflow: hidden;
+}
+.team .member img
+{
+    transition: transform 1s;
+}
+.team .member .layer
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color:rgba(242, 84, 84, 0.85);
+    transition: opacity 0.5s;
+}
+.team .member:hover .layer
+{
+    opacity: 1;
+}
+/* لما بشغل دي ال opacity مش بتشتغل
+.team .member:hover img
+{
+    transform: scale(1.2);
+}*/
+.projects .member:hover h5
+{
+    color: #f25454;
+}
+.projects .title
+{
+    position: relative;
+}
+.projects .title h2
+{
+    font-weight: 700;
+    font-size: 5rem;
+    color: #f1f1f1;
+}
+.projects .title h3
+{
+    font-weight: 700;
+    font-size: 2.8rem;
+    position: absolute;
+}
+.projects .line
+{
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 10px;
+}
+.projects .title:hover .line
+{
+    width : 60px;
+}
+.projects .filter .active
+{
+    color: #f25454;
+    border-radius: 25%;
+    border: 1px solid #f25454;
+}
+.project
+{
+    position: relative;
+    overflow: hidden;
+}
+.project .overlay
+{
+    position: absolute;
+    top:5px;
+    left:5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: all 1s;
+}
+.project:hover .overlay
+{
+    opacity: 1;
+}
+.project:hover img
+{
+    transform: scale(1.1);
+}
+.idea h3
+{
+    font-size: 32px;
+    line-height: 50px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #282828;
+}
+.idea button
+{
+    border-color: #adadad;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 700;
+}
+.services .title
+{
+    position: relative;
+}
+.services .title h2
+{
+    font-weight: 700;
+    font-size: 5rem;
+    color: #f1f1f1;
+}
+.services .title h3
+{
+    font-weight: 700;
+    font-size: 2.8rem;
+    position: absolute;
+}
+.services .line
+{
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 10px;
+}
+.services .title:hover .line
+{
+    width : 60px;
+}
+.service i
+{
+    color :#f25454;
+    font-size: 30px;
+    line-height: 32px;
+}
+.service h3
+{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: #282828;
+    font-weight: 600;
+}
+.service p
+{
+    font-size: 14px;
+    line-height: 1.75em;
+}
+.service:hover h3
+{
+    color: #f25454;
+}
+
+
+.card-header
+{
+    color : #4444;
+}
+.price ul li
+{
+    list-style-type: none;
+    color: #444;
+    border-bottom: 1px solid #eee;
+}
+.card-header h5
+{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #282828;
+}
+.card-header h4
+{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 70px;
+    color: #444;
+}
+.card:hover .card-header
+{
+    color : #f25454;
+}
+.card .colored
+{
+    background-color: #f25454;
+}
+
+.price
+{
+    background-image:   linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../images/pricing.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+}
+.price .title
+{
+    position: relative;
+}
+.price .title h2
+{
+    font-weight: 700;
+    font-size: 5rem;
+    color: #f1f1f1;
+}
+.price .title h3
+{
+    font-weight: 700;
+    font-size: 2.8rem;
+    position: absolute;
+}
+.price .line
+{
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 10px;
+}
+.price .title:hover .line
+{
+    width : 60px;
+}
+
+
+.review .title
+{
+    position: relative;
+}
+.review .title h2
+{
+    font-weight: 700;
+    font-size: 5rem;
+    color: #f1f1f1;
+}
+.review .title h3
+{
+    font-weight: 700;
+    font-size: 2.8rem;
+    position: absolute;
+}
+.review .line
+{
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 10px;
+}
+.review .title:hover .line
+{
+    width : 60px;
+}
+
+
+
+
+.blog .title
+{
+    position: relative;
+}
+.blog .title h2
+{
+    font-weight: 700;
+    font-size: 5rem;
+    color: #f1f1f1;
+}
+.blog .title h3
+{
+    font-weight: 700;
+    font-size: 2.8rem;
+    position: absolute;
+}
+.blog .line
+{
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 10px;
+}
+.blog .title:hover .line
+{
+    width : 60px;
+}
+.blog .single a
+{
+    color: #f25454;
+}
+.blog .single
+{
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.blog .single img
+{
+    transition: all 1s;
+}
+.blog .single img:hover
+{
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+.single .category
+{
+    background-color: #f25454;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    border-radius: 3px 0 0 3px;
+}
+.single .category p
+{
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 600;
+}
+.one .txt 
+{
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.one i
+{
+    font-size: 48px;
+    line-height: 48px;
+    color: #f25454;
+}
+.one h5
+{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+}
+.one p
+{
+        font-size: 14px;
+    line-height: 14px;
+}
+
+
+
+.contact .title
+{
+    position: relative;
+}
+.contact .title h2
+{
+    font-weight: 700;
+    font-size: 5rem;
+    color: #f1f1f1;
+}
+.contact .title h3
+{
+    font-weight: 700;
+    font-size: 2.8rem;
+    position: absolute;
+}
+.contact .line
+{
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 10px;
+}
+.contact .title:hover .line
+{
+    width : 60px;
+}
+.contact .info
+{
+    border-bottom: 1px solid #eee;
+}
+.contact .icon
+{
+    color: #f25454;
+    font-size: 32px;
+    line-height: 40px;
+}
+.contact h4
+{
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: #282828;
+    font-weight: 600;
+}
+.logo img
+{
+    opacity : 0.7;
+}
+.logo img:hover
+{
+    opacity : 1;
+}
+.review .carousel-item .active
+{
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+}
+.carousel-item p
+{
+    font-size: 25px;
+    line-height: 1.5em;
+    color: #666;
+}
+.carousel-item h3
+{
+    font-size: 16px;
+    line-height: 16px;
+    color: #282828;
+    font-weight: 600;
+}
+.carousel-item .image 
+{
+    border-radius: 50%;
+    height: 100px;
+    width : 100px;
+    opacity: 0.7;
+}
